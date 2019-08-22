@@ -9,8 +9,14 @@ function App() {
 
   // 1. Hold each team's current score in a state value
   // LionsScorepoints is one slice of state and current value is 32
-  const [LionsScorepoints, setLionsScorepoints] = useState(32);
-  const [TigersScorepoints, setTigersScorepoints] = useState(32);
+  const [LionsScorepoints, setLionsScorepoints] = useState(20);
+  const LionsScored = e => {
+    setLionsScorepoints(LionsScorepoints + 7)
+  }
+  const [TigersScorepoints, setTigersScorepoints] = useState(20);
+  const TigersScored  = e => {
+    setTigersScorepoints(TigersScorepoints + 7)
+  }
 
   return (
     <div className="container">
@@ -21,12 +27,14 @@ function App() {
 
             {/* TODO STEP 3 - We need to change the hardcoded values in these divs to accept dynamic values from our state. */}
 
-            <div className="home__score">32</div>
+  {/* // 2. Render each team's current score that is in state to the DOM. */}
+
+            <div className="home__score">{LionsScorepoints}</div>
           </div>
           <div className="timer">00:03</div>
           <div className="away">
             <h2 className="away__name">Tigers</h2>
-            <div className="away__score">32</div>
+            <div className="away__score">{TigersScorepoints}</div>
           </div>
         </div>
         <BottomRow />
