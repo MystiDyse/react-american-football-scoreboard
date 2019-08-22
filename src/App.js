@@ -1,11 +1,16 @@
 //TODO: STEP 1 - Import the useState hook.
-import React, { useState } from "react";
+import React, { useState } from "react"; //useState hook added
 import "./App.css";
 import BottomRow from "./BottomRow";
 
 
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
+
+  // 1. Hold each team's current score in a state value
+  // LionsScorepoints is one slice of state and current value is 32
+  const [LionsScorepoints, setLionsScorepoints] = useState(32);
+  const [TigersScorepoints, setTigersScorepoints] = useState(32);
 
   return (
     <div className="container">
