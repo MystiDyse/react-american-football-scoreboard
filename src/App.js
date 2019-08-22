@@ -23,6 +23,10 @@ function App() {
   const TigersFieldgoal= e => {
     setTigersScorepoints(TigersScorepoints + 3)
   }
+  // const [Quarter, setQuarter] = useState(1)
+  // const changeQuarter = e => {
+  //   setQuarter(Quarter + 1)
+  // }
 
   return (
     <div className="container">
@@ -55,6 +59,7 @@ function App() {
         <div className="awayButtons">
           <button className="awayButtons__touchdown" onClick={TigersTouchdown}>Away Touchdown</button>
           <button className="awayButtons__fieldGoal" onClick={TigersFieldgoal}>Away Field Goal</button>
+          {/* <button className="change__Quarter" onClick={changeQuarter}>Next Quarter</button> */}
         </div>
       </section>
     </div>
