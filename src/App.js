@@ -48,6 +48,7 @@ function App() {
       <section className="buttons">
         <div className="homeButtons">
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
+          {/* 3. Be able to click the different buttons to increment the appropriate team's score by the correct amount */}
           <button className="homeButtons__touchdown" onClick={LionsTouchdown}>Home Touchdown</button>
           <button className="homeButtons__fieldGoal" onClick={LionsFieldgoal}>Home Field Goal</button>
         </div>
